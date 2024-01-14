@@ -56,6 +56,13 @@ Tab:AddButton({
     end
 })
 
+Tab:AddButton({
+	Name = "Zee Hub",
+	Callback = function()  
+      		print("button pressed")     loadstring(game:HttpGet("https://link.trwxz.com/LS-Zee-Hub-VIP"))()
+     end
+})
+
 local Tab = Window:MakeTab({
 	Name = "bypass anti cheat",
 	Icon = "rbxassetid://4483345998",
