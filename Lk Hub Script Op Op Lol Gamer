@@ -40,6 +40,8 @@ Tab:AddButton({
 	Name = "Twilight ",
 	Callback = function() 
       		print("button pressed")   loadstring(game:HttpGet('https://raw.githubusercontent.com/0x1s2s/twilightxd/main/twilightlol'))()   
+   end
+})
    
 Tab:AddButton({
 	Name = "Noname script ",
