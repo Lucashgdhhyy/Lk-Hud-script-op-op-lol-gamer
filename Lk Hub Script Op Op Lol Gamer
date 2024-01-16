@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Lk Hub|Scripts Hub V0.6.2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Lk Hub|Scripts Hub V0.7.6", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://4483345998",
@@ -70,6 +70,13 @@ Tab:AddButton({
      end
 })
 
+Tab:AddButton({
+	Name = "M Tries",
+	Callback = function()  
+      		print("button pressed")    loadstring(game:HttpGet("https://raw.githubusercontent.com/Minhtriettt/Free-Script/main/MTriet-Hub.lua"))()
+     end
+})
+
 local Tab = Window:MakeTab({
 	Name = "Pet simulator 99",
 	Icon = "rbxassetid://4483345998",
@@ -97,24 +104,27 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "Menssage",
+	Name = "Settings",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 	})
+
+Tab:AddToggle({
+	Name = "Interface: Orion Library",
+	Default = true,
+	Callback = function(Value)
+		print(Value)    
+	end    
+})
 	
-	Tab:AddButton({
-	Name = "sub on my channel",
-	Callback = function()  
-      		print("button pressed")  
-    end
+Tab:AddToggle({
+	Name = "Common  Version",
+	Default = true,
+	Callback = function(Value)
+		print(Value)
+	end    
 })
 
-Tab:AddButton({
-	Name = "lucashelomanu",
-	Callback = function()  
-      		print("button pressed")   
-    end
-})
 -- Dropdown:Refresh(List<table>,true)
 --Dropdown:Set("dropdown option")
 OrionLib:Init()
