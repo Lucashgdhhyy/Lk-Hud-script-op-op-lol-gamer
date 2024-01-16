@@ -1,24 +1,24 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Lk Hub|Scripts Hub V0.7.6", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Lk Hub|Scripts Hub V0.8.3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
-	Name = "Credits",
+	Name = "Status",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 OrionLib:MakeNotification({
-	Name = "LK HUB | Hubs scripts",
+	Name = "Key",
 	Content = "Script Hub",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 Tab:AddButton({
-	Name = "Hub | orion library",
+	Name = "Key 🟧 Danger of ban",
 	Callback = function()     
 	      		print("button pressed")
   	end    
 })
 Tab:AddButton({
-	Name = "By LK Teamer S2",
+	Name = "Lk Hub 🟩 Correct",
 	Callback = function()  
       		print("button pressed") 
      end
