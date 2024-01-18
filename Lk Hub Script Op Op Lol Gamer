@@ -91,17 +91,18 @@ Tab:AddButton({
 })
 
 local Tab = Window:MakeTab({
-	Name = "Doors",
+	Name = "doors",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 
 Tab:AddButton({
-	Name = "kinghub",
+	Name = "King Hub",
 	Callback = function()  
-      		print("button pressed")    loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
+      		print("button pressed")     loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
     end
 })
+
 
 local Tab = Window:MakeTab({
 	Name = "CMDS Admins",
