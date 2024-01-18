@@ -1,24 +1,24 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Lk Hub|Scripts Hub V0.8.3", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Lk Hub|Scripts Hub V0.9", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 local Tab = Window:MakeTab({
 	Name = "Status",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
 OrionLib:MakeNotification({
-	Name = "Key",
+	Name = "new:",
 	Content = "Script Hub",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
 Tab:AddButton({
-	Name = "Key 🟧 Danger of ban",
+	Name = "Doors scripts",
 	Callback = function()     
 	      		print("button pressed")
   	end    
 })
 Tab:AddButton({
-	Name = "Lk Hub 🟩 Correct",
+	Name = "Universal aimbot",
 	Callback = function()  
       		print("button pressed") 
      end
@@ -103,6 +103,20 @@ Tab:AddButton({
     end
 })
 
+
+local Tab = Window:MakeTab({
+	Name = "Doors",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "kinghub",
+	Callback = function()  
+      		print("button pressed")    loadstring(game:HttpGetAsync("https://pastebin.com/raw/R8QMbhzv"))()
+    end
+    
+    
 local Tab = Window:MakeTab({
 	Name = "Settings",
 	Icon = "rbxassetid://4483345998",
